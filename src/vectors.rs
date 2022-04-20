@@ -1,9 +1,20 @@
 //Vectors are resizable arrays
 
 pub fn run(){
-    let numbers: Vec<i32> = vec![1,2,3,4,5];
-    println!("{:?}", numbers);
+    let mut numbers: Vec<i32> = vec![1,2,3,4,5];
     
+    // Reasign value
+    numbers[2] = 20;
+    
+    // Add on to vector
+    numbers.push(5);
+    numbers.push(6);
+
+    // Pop off last value
+    numbers.pop();
+    
+    println!("{:?}", numbers);
+
     // Get single vakue
     println!("Single value: {}", numbers[0]);
     
@@ -16,4 +27,9 @@ pub fn run(){
     //Get slice
     let slice: &[i32] = &numbers[1..3];
     println!("Slice: {:?}",slice);
+
+    // Loop through vector values
+    for x in numbers.iter() {
+        println!("{}",x);
+    }
    }
