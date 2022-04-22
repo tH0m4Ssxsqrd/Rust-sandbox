@@ -1,3 +1,11 @@
+// Iterate until a condition is met
+
 pub fn run(){
-    println!("Hello world")
+    let mut count = 0;
+    
+    // Infinite loop
+    loop {
+        count += 1;
+        println!("Number: {}", count);
+    }
 }
