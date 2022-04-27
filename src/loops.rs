@@ -9,6 +9,7 @@ pub fn run(){
     //     println!("Number: {}", count);
     // }
 
+    // While loop
     while count<=100{
         if count % 15 == 0 { println!("FizzBuzz")}
         else if count % 5 == 0 {println!("Buzz")}
@@ -18,6 +19,13 @@ pub fn run(){
         count += 1
     }
 
+    // For Loop
+    for x in 1..101{
+        if x % 15 == 0 { println!("FizzBuzz")}
+        else if x % 5 == 0 {println!("Buzz")}
+        else if x % 3 == 0 {println!("Fizz")}
+        else {println!("{}", x)}
+    }
 
 
 
