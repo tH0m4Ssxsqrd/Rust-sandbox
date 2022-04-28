@@ -1,4 +1,4 @@
-//Vectors are resizable arrays
+//Vectors are resizable arrays, except all elements must be of the same data type.
 
 pub fn run(){
     let mut numbers: Vec<i32> = vec![1,2,3,4,5];
