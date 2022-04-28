@@ -1,5 +1,7 @@
 // Used to create custom data types
 
+// Note: I really don't like using classes
+
 // Traditional struct
 // struct Color {
 //     red:u8,
